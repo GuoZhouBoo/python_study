@@ -12,6 +12,12 @@ def test_list():
     print list1[0:3]  # 输出第1-3个元素
     print list1[0:]  # 输出从0到最后的元素
     print list1[0:-1]  # 输出从0到最后第二元素
+    list1.append(6)  # 更新列表
+    print list1
+    del list1[1]  # 删除指定位置的元素
+    print list1
+    list1.reverse()  # 逆置列表
+    print list1
     print '-----------------'
 
 
