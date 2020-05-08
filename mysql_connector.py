@@ -9,8 +9,8 @@ import mysql.connector
 def connectdb():
     print('正在连接到mysql服务器...')
     # 打开数据库连接
-    # 用户名:hp, 密码:Hp12345.,用户名和密码需要改成你自己的mysql用户名和密码，并且要创建数据库TESTDB，并在TESTDB数据库中创建好表Student
-    db = mysql.connector.connect(host='10.1.21.161', user="root", passwd="1213", database="python_connection_test",
+    # 用户名:root, 密码:1213, 用户名和密码需要改成自己的mysql用户名和密码
+    db = mysql.connector.connect(host="10.1.21.161", user="root", passwd="1213", database="python_connection_test",
                                  use_unicode=True)
     print('成功连接到数据库')
     return db
@@ -39,8 +39,8 @@ def insertdb(db):
 
     # SQL 插入语句
     sql = """INSERT INTO course
-         VALUES (1, '语文', 1211, 0),
-                (2, '数学', 1212, 1),
+         VALUES (1, '论语', 1211, 0),
+                (2, '计算机网络', 1212, 1),
                 (3, '英语', 1213, 2),
                 (4, '高数', 1214, 3),
                 (5, '线性代数', 1215, 4),
