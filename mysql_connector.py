@@ -84,7 +84,7 @@ def updatedb(db):
     cursor = db.cursor()
 
     # SQL 更新语句
-    sql = "UPDATE course SET teacher_id = teacher_id + 1 WHERE ID = '%d'" % (1)
+    sql = "UPDATE course SET teacher_id = teacher_id + 1 WHERE ID = '%d'" % 1
 
     try:
         # 执行SQL语句
@@ -102,7 +102,7 @@ def deleterow(db):
     cursor = db.cursor()
 
     # SQL 删除语句
-    sql = "DELETE FROM course WHERE ID = '%d'" % (1)
+    sql = "DELETE FROM course WHERE ID = '%d'" % 1
 
     try:
         # 执行SQL语句
